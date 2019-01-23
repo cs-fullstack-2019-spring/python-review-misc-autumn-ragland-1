@@ -1,6 +1,6 @@
 def main():
-    problem1()
-    # problem2()
+    # problem1()
+    problem2()
     # bonus1()
     # bonus2()
 
@@ -25,15 +25,14 @@ def problem2():
 
     def problem2a(num1, num2, num3, operation):
         if operation == "sum":
-            print("sum = " + str(num1 + num2 + num3))
+            print("The sum of " + str(num1) + " " + str(num2) + " and " + str(num3) + " is " + str(num1 + num2 + num3))
         elif operation == "prod":
-            print("product = " + str(num1 * num2 * num3))
+            print("The product of " + str(num1) + " " + str(num2) + " and " + str(num3) + " is " + str(num1 * num2 * num3))
         elif operation == "avg":
-            print("average = " + str((num1 + num2 + num3)//3))
+            print("The average of " + str(num1) + " " + str(num2) + " and " + str(num3) + " is " + str((num1 + num2 + num3)//3))
         else:
             print("INVALID OPERATION")
-    problem2a(2, 4, 6, "avg")
-
+    problem2a(2, 4, 6, "blah")
 
 
 if __name__ == '__main__':
