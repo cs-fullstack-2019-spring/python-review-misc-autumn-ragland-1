@@ -1,7 +1,7 @@
 def main():
     # problem1()
-    problem2()
-    # bonus1()
+    # problem2()
+    bonus1()
     # bonus2()
 
 # Create a function that has a loop that quits with q.
@@ -32,8 +32,15 @@ def problem2():
             print("The average of " + str(num1) + " " + str(num2) + " and " + str(num3) + " is " + str((num1 + num2 + num3)//3))
         else:
             print("INVALID OPERATION")
-    problem2a(2, 4, 6, "blah")
-
+    problem2a(2, 4, 6, "sum")
+# Write a function that prompts the User for the number of stars to print.
+# Then use a loop to print a number of stars/asterisks starting with 1 and up to the number entered by the User.
+# If rows is 5, it should print the following:
+def bonus1():
+    stars = "*"
+    userInput = int(input("How many stars do you want to print? "))
+    for rows in range(userInput):
+        print(stars*(rows+1))
 
 if __name__ == '__main__':
     main()
